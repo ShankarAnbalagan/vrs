@@ -107,8 +107,6 @@ if remove_states != '':
             if set(r1).issubset(set(r2)):
                 to_remove.append(r2)
 
-    print(to_remove)
-
     kripke_transition_relation_removed = list(kripke_transition_relation)
     for r in to_remove:
         for idx, t in enumerate(kripke_transition_relation_removed):
